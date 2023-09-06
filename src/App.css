@@ -1,0 +1,200 @@
+* {
+  font-family: "Oswald", sans-serif;
+  /* box-sizing: border-box; */
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+:root {
+  --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  --gradient-bar: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
+  --color-bg: #040c18;
+  --color-footer: #031b34;
+  --color-blog: #042c54;
+  --color-text: #81afdd;
+  --color-subtext: #ff8a71;
+}
+body {
+  background-color: var(--color-bg);
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.barss {
+  font-size: 33px;
+}
+@keyframes example {
+  0% {
+    -o-transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    -o-transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+/* The element to apply the animation to */
+.nav {
+  animation-name: example;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+}
+.heading {
+  background: linear-gradient(90deg, #ae67fa 0%, #f49867 97.4%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -4%;
+}
+.para {
+  color: var(--color-text);
+
+  text-transform: capitalize;
+}
+form input:last-child {
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.hafter {
+  position: relative;
+}
+.hafter::after {
+  position: absolute;
+  content: "";
+  width: 38px;
+  height: 2px;
+  left: 0;
+  top: 0;
+  background: linear-gradient(90deg, #ae67fa 0%, #f49867 97.4%);
+}
+.cta {
+  background: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+}
+.blogs {
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 340px) {
+  .box-blogs div:first-child div:nth-child(2) {
+    height: 51.5%;
+  }
+  .blogs div:first-child div:nth-child(2) {
+    height: inherit;
+  }
+}
+
+@media (min-width: 640px) {
+  .box-blogs div:first-child div:nth-child(2) {
+    height: 59.36%;
+  }
+  .blogs div:first-child div:nth-child(2) {
+    height: inherit;
+  }
+}
+@media (min-width: 768px) {
+  .box-blogs div:first-child div:nth-child(2) {
+    height: 52.7%;
+  }
+  .blogs div:first-child div:nth-child(2) {
+    height: inherit;
+  }
+}
+@media (min-width: 1024px) {
+  .box-blogs div:first-child div:nth-child(2) {
+    height: 55.1%;
+  }
+  .blogs div:first-child div:nth-child(2) {
+    height: inherit;
+  }
+}
+@media (min-width: 1280px) {
+  .box-blogs div:first-child div:nth-child(2) {
+    height: 56.2%;
+  }
+  .blogs div:first-child div:nth-child(2) {
+    height: inherit;
+  }
+}
+@media (min-width: 1536px) {
+  .box-blogs div:first-child div:nth-child(2) {
+    height: 48.98%;
+  }
+  .blogs div:first-child div:nth-child(2) {
+    height: inherit;
+  }
+}
+.blurfeaturess {
+  border-radius: 50%;
+  filter: blur(282px);
+  background: #07325f;
+  top: 50%;
+  left: -40%;
+  transform: translate(-50%, -50%);
+}
+.blur-gpt-top {
+  border-radius: 581px;
+  background: #0f4279;
+  filter: blur(60px);
+}
+.blur-gpt-bottom {
+  width: 623px;
+  height: 558px;
+  flex-shrink: 0;
+  border-radius: 623px;
+  background: #1b78de;
+  filter: blur(100px);
+}
+.blurrheader {
+  width: 1013px;
+  height: 1013px;
+  flex-shrink: 0;
+  position: absolute;
+  border-radius: 1013px;
+  background: #002853;
+  filter: blur(282px);
+  top: -50%;
+  left: -90%;
+}
+.facegpt {
+  position: absolute;
+  width: 285px;
+  height: 285px;
+  flex-shrink: 0;
+  border-radius: 285px;
+  background: #0f6bcd86;
+  filter: blur(107px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
